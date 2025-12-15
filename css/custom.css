@@ -1,0 +1,21 @@
+html, body {
+  background-color: #ffffff;
+  
+}
+
+/* Navbar background: bright sky blue */
+.navbar-custom {
+  background-color: white; /* sky blue */
+  font-family: 'Comic Sans MS'; /* playful font */
+  color: rgb(135, 197, 233);
+}
+.navbar-brand fw-bold {
+  background-color: white; /* sky blue */
+  font-family: 'Comic Sans MS'; /* playful font */
+}
+
+.phoneicon{
+position: absolute;
+  top: 130px;
+  left: 10px;
+}
