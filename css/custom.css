@@ -3,19 +3,584 @@ html, body {
   
 }
 
-/* Navbar background: bright sky blue */
-.navbar-custom {
-  background-color: white; /* sky blue */
-  font-family: 'Comic Sans MS'; /* playful font */
-  color: rgb(135, 197, 233);
-}
-.navbar-brand fw-bold {
-  background-color: white; /* sky blue */
-  font-family: 'Comic Sans MS'; /* playful font */
+
+.navbar-brand{
+  background-color: #facef1;
+  font-family:'Times New Roman', Times, serif;
+  font-size:xx-large;
+  font-weight: 600px !important;
+   color: black !important; 
+ margin-left: 10px;
+ }
+
+.container-fluid {
+  background-color: #facef1; 
 }
 
-.phoneicon{
-position: absolute;
-  top: 130px;
-  left: 10px;
+.nav-item{
+  font-family:'Times New Roman', Times, serif
+}
+.navbar {
+  position: relative;
+  z-index: 9999;
+}
+
+.card1{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 300px;
+}
+
+.card2{
+    width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0px;
+  left: 290px;
+}
+
+
+.card-body{
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.signin-icon {
+  position: absolute;
+  top: 80px;  
+  right: 20px;
+  z-index: 1000;
+}
+.signin-icon img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.cart-icon {
+  position: absolute;
+  top: 80px;  
+  right: 60px;
+  z-index: 1000;
+}
+.cart-icon img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.site-footer {
+  background-color: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.site-footer {
+  background-color: #facef1;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.site-footer {
+  background-color:#facef1;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer {
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+  .divider {
+  text-align: center;
+  margin: 60px 0;
+  color: #facef1;
+  font-size: 50px;
+}
+
+.product-page h1 {
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.product-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.product-card .card-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-card .card-text {
+  font-size: 0.95rem;
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.btn-outline-primary {
+  color: #000000;
+  border-color: #000000;
+}
+
+.btn-outline-primary:hover {
+  background-color: #e6c2f0;
+  color: rgb(0, 0, 0);
+}
+
+.starring{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; 
+}
+
+.starring {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.ringofstars{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; 
+}
+
+.ringofstars {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.bowring {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; 
+}
+
+.bowring {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.home-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-8px);
+}
+
+.home-image {
+  height: 280px;
+  object-fit: cover;
+}
+
+
+.card-title {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+.necklaces {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; 
+}
+
+.necklaces {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.bracelets {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; 
+}
+
+.bracelets {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.home-image {
+  width: 100%;
+  height: 260px;       
+  object-fit: contain; 
+  background-color: #fff; 
+  padding: 15px;
+}
+
+
+.luxury-services-hero {
+  position: relative;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0d0a0a;
+}
+
+.luxury-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.luxury-hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.luxury-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  color: #41413e;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.luxury-services-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 25px;
+  font-family: "Playfair Display", serif;
+}
+
+.luxury-services-hero p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: #393232;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.luxury-services-hero {
+  position: relative;
+  height: 80vh;
+
+  background-image: url("../images/earrings-homee.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #000000;
+}
+
+.luxury-btn {
+  text-decoration: none;
+  padding: 14px 40px;
+  border: 1px solid #000000;
+  color: #000000;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.luxury-btn:hover {
+  background-color: #facef1;
+  color: #000;
+}
+.luxury-services-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.45);
+}
+/* Luxury Accordion Container */
+.luxury-accordion {
+  max-width: 900px;
+  margin: 80px auto;
+}
+
+/* Card Styling */
+.luxury-accordion .card {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Header */
+.luxury-accordion .card-header {
+  background: transparent;
+  padding: 30px 0;
+  border: none;
+}
+
+/* Luxury Accordion Container */
+.luxury-accordion {
+  max-width: 900px;
+  margin: 80px auto;
+}
+
+/* Card Styling */
+.luxury-accordion .card {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Header */
+.luxury-accordion .card-header {
+  background: transparent;
+  padding: 30px 0;
+  border: none;
+}
+
+/* Accordion Button */
+.luxury-accordion .btn-link {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #0d0a0a;
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+/* Gold hover */
+.luxury-accordion .btn-link:hover {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+/* Plus / Minus Icon */
+.luxury-accordion .btn-link::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 1.5rem;
+  color: #d4af37;
+  transition: transform 0.3s ease;
+}
+
+/* When Open */
+.luxury-accordion .btn-link[aria-expanded="true"]::after {
+  content: "–";
+}
+
+/* Body Text */
+.luxury-accordion .card-body {
+  padding: 10px 0 35px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 700px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.luxury-contact-hero {
+  position: relative;
+  width: 100%;
+  height: 40vh; 
+  background-image: url("../images/necklaces-products\ \(2\).jpeg");
+  background-size: contain;     
+  background-position: center; 
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.luxury-overlay {
+  background: #c1b4c18c;
+}
+
+
+.luxury-contact-hero .luxury-hero-content {
+  position: relative;
+  max-width: 700px;
+  padding: 20px;
+}
+.contact-info {
+  margin: 0 auto;
+  text-align: center;
+}
+.luxury-about-hero {
+  position: relative;
+  height: 60vh;
+  background-image: url("../images/about-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #000000;
+}
+/* About Text */
+.about-section {
+  padding: 100px 0;
+}
+
+.about-section h2 {
+  font-family: "times new roman";
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  color: #555;
+  line-height: 1.8;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Team Section */
+.team-section {
+  padding-bottom: 100px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.team-card h4 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 5px;
+}
+
+.team-card span {
+  color: #777;
+  font-size: 0.95rem;
+}
+ 
+/* FAQ */
+.faq-tabs {
+  max-width: 800px;
+  margin: 50px auto;
+  font-family: 'Times New Roman', Times, serif
+}
+
+.tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #c4c1c1;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  border-bottom: 3px solid #facef1;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content p {
+  margin-bottom: 15px;
+}
+
+.insta-icon {
+  position: absolute;
+  top: 595px;  
+  right: 650px;
+  z-index: 1000;
+}
+.insta-icon img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
